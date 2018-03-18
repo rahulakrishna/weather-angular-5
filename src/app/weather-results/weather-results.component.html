@@ -1,0 +1,12 @@
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="results && !loading">
+  Results!
+  <div class="forecasts">
+    <div *ngFor="let forecast of results.channel.item.forecast" class="forecast">
+      
+      <div>{{forecast.date}} - {{forecast.high | fahrToCelsius}}° Celsius</div>
+    </div>
+  </div>
+</div>

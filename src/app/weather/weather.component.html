@@ -1,6 +1,8 @@
 <div class="weather">
   <div class="weather-input">
-    <input type="text">
+    <input [(ngModel)]="place" type="text" class="input">
+    <button (click)="getWeather()" class="input">Fetch</button>
   </div>
-  
+  {{place}}
+  <app-weather-results [results]="results" [loading]="loading"></app-weather-results>
 </div>

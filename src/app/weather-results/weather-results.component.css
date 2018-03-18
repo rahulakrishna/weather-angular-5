@@ -1,0 +1,12 @@
+.forecasts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.forecast{
+    width: 20%;
+    margin: 10px;
+    box-shadow: 0px 0px 1px 0px #f0f0f0;
+    padding: 10px;
+}
